@@ -1,0 +1,23 @@
+<div class="container">
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 id="title">Autenticação de usuário</h2>
+        </div>
+        <div class="panel-body">
+          {{#if session.isAuthenticated}}
+            <button class="btn btn-danger btn-lg" {{action 'logout'}}>Sair</button>
+          {{else}}
+            {{input class="form-control" type="text" value=userEmail placeholder="Email"}}<br>
+            {{input class="form-control" type="password" value=userPassword placeholder="Senha"}}<br>
+            <button class="btn btn-success btn-lg" {{action "login"}}> Entrar </button>
+          {{/if}}
+
+          {{outlet}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

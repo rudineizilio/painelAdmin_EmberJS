@@ -1,0 +1,45 @@
+<h2>Editar operador</h2>
+
+<div class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-1 control-label">Nome</label>
+        <div class="col-sm-6">
+            {{input type="text" value=model.nome class="form-control" placeholder="Nome do Carrossel"}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-1 control-label">Facebook</label>
+        <div class="col-sm-6">
+            {{input type="text" value=model.facebook class="form-control" placeholder="Link do perfil do Facebook"}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-1 control-label">Instagram</label>
+        <div class="col-sm-6">
+            {{input type="text" value=model.instagram class="form-control" placeholder="Link do perfil do Instagram"}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-1 control-label">Função</label>
+        <div class="col-sm-6">
+            {{input type="text" value=model.funcao class="form-control" placeholder="Função do operador"}}
+        </div>
+    </div>   
+    <div class="form-group">
+        <label class="col-sm-1 control-label">Rifle</label>
+        <div class="col-sm-6">
+            {{input type="text" value=model.rifle class="form-control" placeholder="Rifle do operador"}}
+        </div>
+    </div>  
+    <div class="form-group">
+        <label class="col-sm-1 control-label">Imagem</label>
+        <div class="col-sm-6">
+            {{input type="text" value=model.imagem class="form-control" placeholder="Foto do operador"}}
+        </div>
+    </div>         
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default" {{action 'saveEquipe' model}}>Salvar alterações</button>
+        </div>
+    </div>
+</div>

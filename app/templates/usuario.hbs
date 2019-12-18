@@ -1,0 +1,15 @@
+<div class="content-container">
+  <div class="container-fluid">
+    <h1>USUÁRIO</h1>
+    <hr>
+    
+    <div class="well">
+      <ul class="nav nav-tabs">
+        {{#link-to 'usuario.index' tagName="li"}}<a href="">Listar</a>{{/link-to}}
+        {{#link-to 'usuario.new' tagName="li"}}<a href="">Novo</a>{{/link-to}}
+      </ul>
+    </div>
+
+    {{outlet}}
+  </div>
+</div>

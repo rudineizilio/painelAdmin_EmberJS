@@ -1,0 +1,29 @@
+{{#if session.isAuthenticated}}
+    <div class="sidebar-container">
+        <div class="sidebar-logo">
+            <img src="" alt="">
+        </div>
+        <ul class="sidebar-navigation">
+            <li class="header">
+                {{#link-to 'exibicao' tagName="li"}}<a href="">Painel administrativo</a>{{/link-to}}
+            </li>
+            <li>
+                {{#link-to 'carrossel' tagName="li"}}<a href="">Carrossel</a>{{/link-to}}
+            </li>
+            <li>
+                {{#link-to 'equipe' tagName="li"}}<a href="">Equipe</a>{{/link-to}}
+            </li>
+            <li>
+                {{#link-to 'usuario' tagName="li"}}<a href="">Usuário</a>{{/link-to}}
+            </li>  
+
+            <li>
+                {{#if session.isAuthenticated}}
+                    <a href=""{{action 'logout'}}>Sair</a>
+                {{/if}}
+            </li>              
+        </ul>
+    </div>
+{{/if}}
+
+{{outlet}}

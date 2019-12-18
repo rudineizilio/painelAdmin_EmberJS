@@ -1,0 +1,27 @@
+<h2>Editar Carrossel</h2>
+
+<div class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-1 control-label">Nome</label>
+        <div class="col-sm-6">
+            {{input type="text" value=model.nome class="form-control" placeholder="Nome do Carrossel"}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-1 control-label">Link</label>
+        <div class="col-sm-6">
+            {{input type="text" value=model.link class="form-control" placeholder="Link de redirecionamento do Carrossel"}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-1 control-label">Imagem</label>
+        <div class="col-sm-6">
+            {{input type="text" value=model.imagem class="form-control" placeholder="Imagem de exibição"}}
+        </div>
+    </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default" {{action 'saveCarrossel' model}}>Salvar alterações</button>
+    </div>
+  </div>
+</div>

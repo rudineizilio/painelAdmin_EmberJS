@@ -1,0 +1,27 @@
+<h2>Adicionar um novo Usuário</h2>
+
+<div class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-1 control-label">Nome</label>
+        <div class="col-sm-6">
+            {{input type="text" value=model.nome class="form-control" placeholder="Nome do usuário"}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-1 control-label">Login</label>
+        <div class="col-sm-6">
+            {{input type="text" value=model.login class="form-control" placeholder="Login do usuário"}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-1 control-label">Senha</label>
+        <div class="col-sm-6">
+            {{input type="text" value=model.senha class="form-control" placeholder="Senha do usuário"}}
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default" {{action 'saveUsuario' model}}>Adicionar usuário na lista</button>
+        </div>
+    </div>
+</div>
